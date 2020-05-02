@@ -4,7 +4,7 @@ This is a simple tool to detect if your dog is barking in your house while you a
 
 ## TODO List ##
 
-- [ ] Record from available microphone in computer.
+- [X] Record from available microphone in computer.
 - [ ] Process the data to detect any bark.
 - [ ] Cut the audio around the time of barking.
 - [ ] Send a notification (using e-mail) to you with some samples and time.
