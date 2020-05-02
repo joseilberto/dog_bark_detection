@@ -35,6 +35,7 @@ def save_segment(
         path, frames, length = 30, sampling = 44100, 
         depth = 32, channels = 1, sampling_width = 4):
     """
+        Parameters:
         path (str): Path where the file will be stored.
         frames (list of binary strings): A list containing the data we want to save in the file.
         length (float): Length of the recorded segment in seconds.
