@@ -1,0 +1,12 @@
+name: dog_barking
+channels:
+  - conda-forge
+dependencies:
+  - python=3.7.3   
+  - numpy
+  - pandas
+  - matplotlib
+  - scipy
+  - librosa
+  - scikit-learn
+  - pip
