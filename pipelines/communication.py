@@ -19,7 +19,7 @@ def create_body(files, message):
     for file in files:
         filename = basename(file)
         name, date, hour, minute, seconds = "".join(filename.split(".")[0]).split("_")
-        bark_messages += pattern_message(hour, minute, seconds, date)
+        bark_messages += pattern_message(name, hour, minute, seconds, date)
     return bark_messages + message["body_end"] + message["signature"]
 
 

@@ -6,7 +6,7 @@ import numpy as np
 import matplotlib.pyplot as plt
 
 
-def detect_bark(
+def detect_bark_howl(
     audio, sampling = 44100, freq_range = (1000, 2000),
     db_range = (90, 140), duration = [0.08, 0.16, 0.32], 
     sensitivity = -26, clip = 15, silence_before = 1):
