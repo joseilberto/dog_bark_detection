@@ -13,5 +13,12 @@ def load_audio(path, sampling = 44100, depth = 32):
     return librosa.load(path, sr = sampling, dtype = dtype)
 
 
-def save_audio(path, array, sampling = 44100, scale = "none", sampling_width = 4):
+def save_audio(path, array, sampling = 44100, sampling_width = 4):
+    """
+        Parameters:
+        path (str): Path where to save the audio file.
+        array (np.array of floats): Array to be saved.
+        sampling (int): Sampling rate of the stream.
+        sampling_width (int): Sampling width of the stream.
+    """
     wavio.write(path, array, rate = sampling, sampwidth = sampling_width)
