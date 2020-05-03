@@ -32,7 +32,7 @@ if __name__ == "__main__":
         output_audio = base_output(cur_folder, current_time)
         os.makedirs(dirname(output_audio), exist_ok = True)
         files.append(output_audio)
-        save_audio(output_audio, clipped_audio)
+        save_audio(output_audio, clipped_audio[::4], int(sampling / 4))
         count += 1
         if count % nfiles == 0:
             cur_folder += 1
