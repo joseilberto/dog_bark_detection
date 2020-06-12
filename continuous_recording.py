@@ -41,4 +41,7 @@ if __name__ == "__main__":
         message.update({
             "body": create_body(files, message)
         })
-        send_files(files, sender, receiver, message)
+        try:
+            send_files(files, sender, receiver, message)
+        except:
+            continue
