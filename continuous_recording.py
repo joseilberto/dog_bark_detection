@@ -1,7 +1,6 @@
 from datetime import datetime
 from os.path import join, dirname
 
-import matplotlib.pyplot as plt
 import os
 
 from data.config import *
