@@ -1,4 +1,3 @@
-from pathlib import Path
 from tkinter import Button, Entry, Frame, Image, IntVar, Label, Menu, TclError, Tk, Toplevel, ttk
 
 from .record_manager import RecordManager
@@ -24,8 +23,7 @@ class DogBarkingInterface(Tk):
         self.tk.call("wm", "iconphoto", self._w, img)
         self.data = None
         self.frames = {}
-        current_dir = str(Path.home())
-        self.record_manager = RecordManager(current_dir)
+        self.record_manager = RecordManager()
         self.init_start_page()
         self.show_frame(MainPage)
     

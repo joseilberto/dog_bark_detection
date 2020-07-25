@@ -13,10 +13,6 @@ from .constants import message
 
 
 class RecordManager:
-    def __init__(self, current_dir):
-        self.current_dir = current_dir
-
-    
     def continuous_recording(self, entries):
         configuration = self.process_entries(entries)
         while True:
