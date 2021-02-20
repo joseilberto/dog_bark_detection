@@ -13,7 +13,7 @@ from pipelines.store import get_batches
 
 if __name__ == "__main__":
     n_files = 5
-    attempts = 1
+    attempts = 10
     length = 30
 
     now = datetime.now()
